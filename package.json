@@ -1,0 +1,25 @@
+{
+  "name": "DAP416-Website-Fundamentals",
+  "version": "1.0.0",
+  "description": "This repository will be used for my University module (DAP416 Fundamentals of web development)",
+  "main": "main.css",
+  "scripts": {
+    "build": "node-sass --include-path scss src/scss/main.scss dist/css/main.css && npm run minify-css",
+    "minify-css": "minify dist/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matt-Kissell99/DAP416-Website-Fundamentals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matt-Kissell99/DAP416-Website-Fundamentals/issues"
+  },
+  "devDependencies": {
+    "minify": "^3.0.5",
+    "node-sass": "^4.9.3"
+  },
+  "homepage": "https://github.com/Matt-Kissell99/DAP416-Website-Fundamentals#readme"
+}
