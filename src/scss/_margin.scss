@@ -1,4 +1,4 @@
-.btm-maring-small {
+.btm-margin-small {
     margin-bottom: 10px;
 }
 
@@ -8,4 +8,46 @@
 
 .btm-margin-small {
     margin-bottom: 30px;
+}
+
+.btm-margin-none {
+    margin-bottom: 0 !important;
+}
+
+
+.right-margin-small {
+    margin-right: 10px;
+}
+
+.right-margin-medium {
+    margin-right: 20px;
+}
+
+.right-margin-large {
+    margin-right: 30px;
+}
+
+.right-margin-none {
+    margin-right: 0 !important;
+}
+
+
+.left-margin-small {
+    margin-left: 10px;
+}
+
+.left-margin-medium {
+    margin-left: 20px;
+}
+
+.left-margin-large {
+    margin-left: 30px;
+}
+
+.left-margin-none {
+    margin-left: 0 !important;
+}
+
+.top-margin-none {
+    margin-top: none !important;
 }
