@@ -1,0 +1,124 @@
+ul.navigation-bar {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.navigation-bar li {
+    float:left !important;
+}
+
+li.right {
+    float: right;
+}
+
+li a {
+    display: block;
+    position: relative;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: white;
+}
+
+
+img {
+    height: 46px;
+    z-index: 100;
+}
+
+ul.navigation-bar li.icon {
+    display: none;
+}
+
+@media screen and (max-width : 700px) {
+
+    /* layout */
+
+    section {
+        width: 100%;
+    }
+
+    /* make main section full width */
+
+    aside {
+        display: none;
+    }
+
+    /* hide side bar */
+
+    /* nav */
+
+    ul#navigationBar {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul.navigation-bar li:not(:first-child) {
+        display: none;
+    }
+
+    ul.navigation-bar li.icon {
+        display: inline-block;
+        float: right;
+    }
+
+
+    ul.navigation-bar.mobile-responsive {
+        position: relative;
+
+    }
+
+    ul.navigation-bar.mobile-responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.navigation-bar.mobile-responsive li {
+        float: none;
+        /*  'un' float the list items so they return to displaying vertically */
+        display: inline;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul.navigation-bar.mobile-responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+}
