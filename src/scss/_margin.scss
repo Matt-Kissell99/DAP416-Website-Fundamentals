@@ -1,9 +1,9 @@
 .btm-margin-small {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 .btm-margin-medium {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important; 
 }
 
 .btm-margin-small {
@@ -49,5 +49,17 @@
 }
 
 .top-margin-none {
-    margin-top: none !important;
+    margin-top: 0 !important;
+}
+
+.top-margin-small {
+    margin-top: 10px !important;
+}
+
+.top-margin-medium {
+    margin-top: 20px !important;
+}
+
+.top-margin-smaller {
+    margin-top: 5px;
 }
