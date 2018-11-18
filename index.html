@@ -7,22 +7,27 @@
     <title>Testemp Ltd</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("navigationBar");
+            if (x.className === "navigation-bar") {
+                x.className += "mobile-responsive"
+            } else {
+                x.className = "navigation-bar";
+            }
+        }
+    </script>
 </head>
 <body class="product-theme">
-    <div class="content-background center navbar">
-        <ul>
-            <li><h1 class="btm-margin-none top-margin-none" style="color:red; vertical-align: middle;">Testemp Ltd</h1></li>
-            <li><img src="images/Temperature-logo.png" alt="Company logo" /></li>       
+    <div class="navbar">
+        <ul class="navigation-bar" id="navigationBar">
+            <li class="active"><h1 class="btm-margin-none top-margin-smaller" style="color:red; vertical-align: middle;">Testemp Ltd</h1></li>
             <li><a href="https://www.mattkissell.co.uk/">Home</a></li>
             <li><a href="https://www.mattkissell.co.uk/">Products</a></li>
             <li><a href="https://www.mattkissell.co.uk/">Awards</a></li>
             <li><a href="https://www.mattkissell.co.uk/">Contact us</a></li>
             <li><a href="https://www.mattkissell.co.uk/">About us</a></li>
-            <li>
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-                <div class="menu-icon"></div>
-            </li>   
+            <li class="icon"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li>   
         </ul>    
     </div>
 
