@@ -1,0 +1,19 @@
+.rounded-corners {
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.rounded-bottom {
+    border-radius: 0 0 25px 25px;
+    border: 2px solid black;
+}
+
+.rounded-top {
+    border-radius: 25px 25px 0 0;
+    border: 2px solid black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}

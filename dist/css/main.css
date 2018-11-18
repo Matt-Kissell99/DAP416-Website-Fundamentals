@@ -1,0 +1,116 @@
+.center {
+  text-align: center; }
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  right: 10%; }
+
+.product-theme {
+  background-color: lightskyblue; }
+
+.content-background {
+  background-color: white; }
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #333; }
+
+li {
+  float: center; }
+
+li.right {
+  float: right; }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: green;
+  height: 100%; }
+
+img {
+  height: 46px;
+  z-index: 100; }
+
+@media (max-width: 560px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; }
+  li {
+    display: block; }
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none; }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: green;
+    height: 100%; }
+  img {
+    height: 46px;
+    z-index: 100; } }
+
+#employee-table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  align-content: center; }
+
+#employee-table td, #employee-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; }
+
+#employee-table tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+#employee-table tr:hover {
+  background-color: #ddd; }
+
+#employee-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: blue;
+  color: white; }
+
+#take-home-pay {
+  width: 100%; }
+
+.rounded-corners {
+  border-radius: 25px;
+  border: 2px solid black; }
+
+.rounded-bottom {
+  border-radius: 0 0 25px 25px;
+  border: 2px solid black; }
+
+.rounded-top {
+  border-radius: 25px 25px 0 0;
+  border: 2px solid black; }
+
+.btm-maring-small {
+  margin-bottom: 10px; }
+
+.btm-margin-medium {
+  margin-bottom: 20px; }
+
+.btm-margin-small {
+  margin-bottom: 30px; }
