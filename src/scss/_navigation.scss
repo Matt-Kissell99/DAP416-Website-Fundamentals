@@ -58,7 +58,7 @@ img {
     z-index: 100;
 }
 
-ul.navigation-bar li.icon {
+ul.navigation-bar li.burger-menu {
     display: none;
 }
 
@@ -90,7 +90,7 @@ ul.navigation-bar li.icon {
         display: none;
     }
 
-    ul.navigation-bar li.icon {
+    ul.navigation-bar li.burger-menu {
         display: inline-block;
         float: right;
     }
@@ -101,7 +101,7 @@ ul.navigation-bar li.icon {
 
     }
 
-    ul.navigation-bar.mobile-responsive li.icon {
+    ul.navigation-bar.mobile-responsive li.burger-menu {
         position: absolute;
         right: 0;
         top: 0;
