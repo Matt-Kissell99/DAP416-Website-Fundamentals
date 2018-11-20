@@ -1,0 +1,25 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+}
+
+@media screen and (max-width : 700px) {
+    .cards {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        align-content: center;
+    }
+    
+    .card {
+        flex: 1 100%;
+        border: 1px solid black;
+    }
+}
