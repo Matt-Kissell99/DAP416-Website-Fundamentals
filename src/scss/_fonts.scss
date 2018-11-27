@@ -1,0 +1,28 @@
+@font-face {
+    font-display: fallback;
+    font-family: 'work-sans';
+    font-style: normal;
+    font-weight: 400; 
+    src: local('WorkSans Regular'), local('WorkSans Regular'),
+         url('../fonts/WorkSans-Regular.woff2') format('woff2'), // Super Modern Browsers 
+         url('../fonts/WorkSans-Regular.woff') format('woff'), // Modern Browsers 
+         url('../fonts/WorkSans-Regular.ttf') format('truetype'), // Safari, Android, iOS 
+         url('../fonts/WorkSans-Regular.eot'), // IE9 Compat Modes 
+         url('../fonts/WorkSans-Regular.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+         url('../fonts/WorkSans-Regular.svg#Nunito') format('svg'); // Legacy iOS 
+}
+
+h1 {
+    font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem; //16 px
+}
+
+h2 {
+    font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem; //16 px
+}
+
+p li {
+    font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 0.8 rem; //16 px
+}
