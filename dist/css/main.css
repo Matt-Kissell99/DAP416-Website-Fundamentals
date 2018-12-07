@@ -14,11 +14,15 @@
 .underline {
   text-decoration: underline; }
 
+.logo {
+  color: red;
+  vertical-align: middle; }
+
 .flex-button {
   display: block;
   width: 100%;
   border: none;
-  background-color: #4CAF50;
+  background-color: #007FAA;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
@@ -45,12 +49,20 @@ h2 {
   font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.4rem; }
 
-p li {
+h3 {
+  font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem; }
+
+p {
+  font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.8 rem; }
+
+li {
   font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 0.8 rem; }
 
 .product-theme {
-  background-color: lightskyblue; }
+  background-color: #007FAA; }
 
 .content-background {
   background-color: white; }
@@ -191,6 +203,9 @@ html, body {
 
 .flex-grid-border {
   border: 2px solid black; }
+
+.border-none {
+  border: 0; }
 
 .btm-padding-small {
   padding-bottom: 10px !important; }
@@ -357,6 +372,10 @@ html, body {
 .float-left {
   float: left; }
 
+.image {
+  width: 100%;
+  height: 200px; }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -366,6 +385,15 @@ html, body {
   flex: 1 0 21%;
   /* explanation below */
   margin: 5px; }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1 0 21%;
+  /* explanation below */
+  margin: 5px;
+  height: 95%; }
 
 .flex-product-cards {
   display: flex;
