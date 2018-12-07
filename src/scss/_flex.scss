@@ -3,10 +3,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .card {
     flex: 1 0 21%; /* explanation below */
     margin: 5px;
 }
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    height: 95%;
+  }
 
 .flex-product-cards {
     display: flex;
