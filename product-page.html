@@ -7,8 +7,8 @@
     <title>Testemp Ltd</title>
     <meta name="description" content="Discover our range of products from cables to sensors">
     <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Meta used for inserting font awesome images -->
+    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin /> <!-- Meta used for preloading fonts -->
 </head>
 
 <body class="product-theme">
@@ -19,13 +19,15 @@
             <li><a href="product-page.html">Product page</a></li>
             <li><a href="about-us.html">About us</a></li>
             <li><a href="contact-us.html">Contact us</a></li>
-            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li>   
+            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li> <!-- Javascript method call for toggling menu on mobile --> 
         </ul>    
     </div>
 
+    <!-- Main product content --> 
     <main class="content-background  page-title-padding btm-padding-medium">
         <h2 class="underline center">PVC Cable</h2>
         <section class="flex-product-cards">
+            <!-- Product details section using flex --> 
             <article class="flex-product-card flex-grid-border right-margin-medium left-margin-medium right-padding-small left-padding-small">
                 <h2>Construction</h2>
                 <p>Thermocouple : J, K, T, N, U (R/S compensating), Vx (K compensating) Flat Pair</p>
@@ -44,8 +46,9 @@
                 <p>Generally the insulation is rated -10 to +105°C</p>
             </article>
 
+            <!-- Image card group using flex --> 
             <article class="flex-product-card right-margin-medium ">
-                <img src="images/pvc-cable.png" alt="An image showing multiple PVC cables" class="image" />
+                <img src="images/pvc-cable.jpg" alt="An image showing multiple PVC cables" class="image" />
                 <hr style="width:90%; margin-left: auto; margin-right: auto;">
                 <img src="images/pvc-cable2.png" alt="An image showing multiple PVC cables" class="image" />
 
@@ -53,17 +56,18 @@
         </section>
     </main>
 
+    <!-- Footer including social media links -->
     <footer class="center background-black">
         <div>
-            <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a>
-            <a href="#" class="fa fa-twitter center" rel="noopener norefferer" aria-label="Twitter"></a>
-            <a href="#" class="fa fa-google center" rel="noopener norefferer" aria-label="Google"></a>
-            <a href="#" class="fa fa-youtube center" rel="noopener norefferer" aria-label="Youtube"></a>
-            <a href="#" class="fa fa-instagram center btm-margin-small" rel="noopener norefferer" aria-label="Instagram"></a>
+            <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a> <!-- Only active link for prototype-->
+            <a href="#" class="fa fa-twitter center" aria-label="Twitter"></a> <!-- Aria labels used for screen reader context -->
+            <a href="#" class="fa fa-google center" aria-label="Google"></a>
+            <a href="#" class="fa fa-youtube center" aria-label="Youtube"></a>
+            <a href="#" class="fa fa-instagram center btm-margin-small" aria-label="Instagram"></a>
         </div>
     </footer>
 
-
+    <!-- Javascript used for toggling navigation menu (achieved by hooking onto classes) -->
     <script>
         function toggleMenu() {
             var x = document.getElementById("navigationBar");
