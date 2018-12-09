@@ -39,7 +39,7 @@
   font-family: 'work-sans';
   font-style: normal;
   font-weight: 400;
-  src: local("WorkSans Regular"), local("WorkSans Regular"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.woff2") format("woff2"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.ttf") format("truetype"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.eot"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.svg#Nunito") format("svg"); }
+  src: local("WorkSans Regular"), local("WorkSans Regular"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.woff2") format("woff2"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.ttf") format("truetype"), url("../fonts/Work_Sans/work-sans-v3-latin-regular.svg#Nunito") format("svg"); }
 
 h1 {
   font-family: 'work-sans', Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -112,7 +112,6 @@ li > a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   color: white; }
 
@@ -124,14 +123,10 @@ ul.navigation-bar li.burger-menu {
   display: none; }
 
 @media screen and (max-width: 700px) {
-  /* layout */
   section {
     width: 100%; }
-  /* make main section full width */
   aside {
     display: none; }
-  /* hide side bar */
-  /* nav */
   ul#navigationBar {
     list-style-type: none;
     padding: 0;
@@ -149,7 +144,6 @@ ul.navigation-bar li.burger-menu {
     top: 0; }
   ul.navigation-bar.mobile-responsive li {
     float: none;
-    /*  'un' float the list items so they return to displaying vertically */
     display: inline;
     color: white;
     padding: 14px 16px;
@@ -157,45 +151,6 @@ ul.navigation-bar li.burger-menu {
   ul.navigation-bar.mobile-responsive li a {
     display: block;
     text-align: left; } }
-
-#employee-table {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  align-content: center; }
-
-#employee-table td, #employee-table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center; }
-
-#employee-table tr:nth-child(even) {
-  background-color: #f2f2f2; }
-
-#employee-table tr:hover {
-  background-color: #ddd; }
-
-#employee-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: blue;
-  color: white; }
-
-#take-home-pay {
-  width: 100%; }
-
-.rounded-corners {
-  border-radius: 25px;
-  border: 2px solid black; }
-
-.rounded-bottom {
-  border-radius: 0 0 25px 25px;
-  border: 2px solid black; }
-
-.rounded-top {
-  border-radius: 25px 25px 0 0;
-  border: 2px solid black; }
 
 html, body {
   margin: 0;
@@ -369,12 +324,23 @@ html, body {
   width: 100%;
   position: absolute; }
 
+.full-width {
+  width: 100%;
+  height: 100%; }
+
 .float-left {
   float: left; }
 
 .image {
-  width: 100%;
-  height: 200px; }
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 300px) {
+  width: 300px;
+  height: 300px; }
 
 .cards {
   display: flex;
@@ -383,7 +349,6 @@ html, body {
 
 .card {
   flex: 1 0 21%;
-  /* explanation below */
   margin: 5px; }
 
 .content {
@@ -391,7 +356,6 @@ html, body {
   justify-content: space-between;
   flex-direction: column;
   flex: 1 0 21%;
-  /* explanation below */
   margin: 5px;
   height: 95%; }
 
@@ -402,7 +366,6 @@ html, body {
 
 .flex-product-card {
   flex: 1 0 21%;
-  /* explanation below */
   margin: 5px; }
 
 @media screen and (max-width: 700px) {
