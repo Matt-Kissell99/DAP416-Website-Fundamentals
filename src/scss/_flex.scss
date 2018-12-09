@@ -1,3 +1,4 @@
+//flex structure for the home page flex layout
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +6,7 @@
 }
 
 .card {
-    flex: 1 0 21%; /* explanation below */
+    flex: 1 0 21%; 
     margin: 5px;
 }
 
@@ -13,11 +14,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    flex: 1 0 21%; /* explanation below */
+    flex: 1 0 21%; 
     margin: 5px;
     height: 95%;
   }
 
+//CSS for 2 column layout on the product page
 .flex-product-cards {
     display: flex;
     flex-wrap: wrap;
@@ -25,11 +27,11 @@
 }
 
 .flex-product-card {
-    flex: 1 0 21%; /* explanation below */
+    flex: 1 0 21%; 
     margin: 5px;
 }
 
-@media screen and (max-width : 700px) {
+@media screen and (max-width : 700px) { //mobile flex card group, taking 100% of the width when reducing to mobile
     .cards {
         display: flex;
         flex-flow: wrap;
