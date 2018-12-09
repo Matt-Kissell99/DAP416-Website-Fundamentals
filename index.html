@@ -7,10 +7,11 @@
     <title>Testemp Ltd</title>
     <meta name="description" content="Testemp Ltd are a leading UK based temperature sensor and temperature instrumentation manufacturer. Visit our website to see our full range of controllers and data loggers.">
     <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Meta used for inserting font awesome images -->
+    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin /> <!-- Meta used for preloading fonts -->
 </head>
 
+<!-- Persistent Navigation Bar  -->
 <body class="product-theme">
     <nav class="navbar">
         <ul class="navigation-bar" id="navigationBar">
@@ -19,10 +20,11 @@
             <li><a href="product-page.html">Product page</a></li>
             <li><a href="about-us.html">About us</a></li>
             <li><a href="contact-us.html">Contact us</a></li>
-            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li>   
+            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li>  <!-- Javascript method call for toggling menu on mobile --> 
         </ul>    
     </nav>
 
+    <!-- Company description section -->
     <main class="content-background page-title-padding">
         <h2 class="center">Temperature Sensor and Temperature Instrumentation Manufacturer</h2>
         <div class="btm-margin-medium left-margin-medium right-margin-medium">
@@ -33,7 +35,7 @@
            PT100, PT1000, thermistors, thermopockets, thermowells, transmitters, data loggers, compression fittings, bayonet adaptors, connectors, thermocouple cable and chart recorders. 
         </p>
         <p>Please feel free to contact us on <a href="tel:+441903714140">+441903714140</a> for any questions about our sensor products and instrumentation. 
-           Alternatively you can email <a href="mailto:sales@testemp.co.uk">sales@testemp.co.uk</a> or fax <a href="tel:+44 (0) 1903 717435">+44 (0) 1903 717435</a>
+           Alternatively you can email <a href="mailto:sales@testemp.co.uk">sales@testemp.co.uk</a> or fax <a href="tel:+441903717435">+44 (0) 1903 717435</a>
         </p>
         </div>
 
@@ -47,10 +49,11 @@
             adaptors, connectors, thermocouple cable and chart recorders.
         </p>  
 
+        <!-- Product categories used for selection-->
         <h2 class="btm-margin-medium center">Product Categories</h2>
         <div class="btm-margin-none right-margin-medium left-margin-medium btm-padding-medium center ">
             <section class="cards">
-                <article class="card flex-grid-border">
+                <article class="card flex-grid-border"> <!-- Instrumentation Card -->
                     <div class="content">
                         <div>
                             <img src="images/information.png" alt="Sample photo">
@@ -62,7 +65,7 @@
                         </div>    
                     </div>   
                 </article>
-                <article class="card flex-grid-border">
+                <article class="card flex-grid-border"> <!-- Sensors Card -->
                     <div class="content">
                         <div>
                             <img src="images/information.png" alt="Sample photo">
@@ -74,7 +77,7 @@
                         </div>    
                     </div>   
                 </article>
-                <article class="card flex-grid-border">
+                <article class="card flex-grid-border"> <!-- Cables Card -->
                     <div class="content">
                         <div>
                             <img src="images/information.png" alt="Sample photo">
@@ -86,7 +89,7 @@
                         </div>    
                     </div>   
                 </article>
-                <article class="card flex-grid-border">
+                <article class="card flex-grid-border"> <!-- Thermowells, Fittings and Transmitters Card -->
                     <div class="content">
                         <div>
                             <img src="images/information.png" alt="Sample photo">
@@ -98,7 +101,7 @@
                         </div>    
                     </div>   
                 </article>
-                <article class="card flex-grid-border">
+                <article class="card flex-grid-border"> <!-- Connectors Card -->
                     <div class="content">
                         <div>
                             <img src="images/information.png" alt="Sample photo">
@@ -110,7 +113,7 @@
                         </div>    
                     </div>   
                 </article>
-                <article class="card flex-grid-border">
+                <article class="card flex-grid-border"> <!-- Technical Information Card -->
                     <div class="content">
                         <div>
                             <img src="images/information.png" alt="Sample photo">
@@ -125,16 +128,18 @@
             </section>
         </div>  
     </main>
+    <!-- Footer including social media links -->
     <footer class="center background-black">
         <div>
-        <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a>
-        <a href="#" class="fa fa-twitter center" rel="noopener norefferer" aria-label="Twitter"></a>
-        <a href="#" class="fa fa-google center" rel="noopener norefferer" aria-label="Google"></a>
-        <a href="#" class="fa fa-youtube center" rel="noopener norefferer" aria-label="Youtube"></a>
-        <a href="#" class="fa fa-instagram center btm-margin-small" rel="noopener norefferer" aria-label="Instagram"></a>
+        <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a> <!-- Only active link for prototype-->
+        <a href="#" class="fa fa-twitter center" aria-label="Twitter"></a> <!-- Aria labels used for screen reader context -->
+        <a href="#" class="fa fa-google center" aria-label="Google"></a>
+        <a href="#" class="fa fa-youtube center" aria-label="Youtube"></a>
+        <a href="#" class="fa fa-instagram center btm-margin-small" aria-label="Instagram"></a>
         </div>
     </footer>
 
+    <!-- Javascript used for toggling navigation menu (achieved by hooking onto classes) -->
     <script>
         function toggleMenu() {
             var x = document.getElementById("navigationBar");
