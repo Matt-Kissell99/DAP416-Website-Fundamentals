@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testemp Ltd</title>
+    <meta name="description" content="There are many ways to contact us here at Testemp Ltd, choose one and we will be able to answer your questions quickly and effectively">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Meta used for inserting font awesome images -->
+    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin /> <!-- Meta used for preloading fonts -->
+</head>
+
+<body class="product-theme">
+    <div class="navbar">
+        <ul class="navigation-bar" id="navigationBar">
+            <li class="active"><h1 class=" logo btm-margin-none top-margin-smaller left-padding-small">Testemp Ltd</h1></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-page.html">Product page</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="">Contact us</a></li>
+            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li> <!-- Javascript method call for toggling menu on mobile --> 
+        </ul>    
+    </div>
+
+    <!-- Main content (contact details) --> 
+    <main class="content-background page-title-padding left-padding-medium btm-padding-medium right-padding-medium">
+        <h2 class="center">Contact us</h2>
+        <p>We want to deliver you the best customer experience and we are commited in doing so.
+            We provide a variety of ways to contact us so that we can help with your query as soon as possible.
+        </p>
+        <h2>Complaints</h2>
+        <p>If you have any complaints regarding the products you have purchased you can contact us at: 
+            <a href="mailto:sales@testemp.co.uk">sales@testemp.co.uk</a> <!-- mailto link for ease of mobile applications --> 
+        </p>
+        <h2>Returns policy</h2>
+        <p>We are contactable 24/7 through a range of methods, including:</p>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Google</li>
+            <li>Instagram</li>
+            <li><a href="tel:+441903714140" class="padding-none black underline">+441903714140</a></li> <!-- Telelphone attribute allows mobile users to jump into their phone app to call --> 
+        </ul>
+    
+        <h2>Address</h2>
+        <p>You can find us at our address:<br>
+            Testemp Ltd,<br>
+            Rope Walk,<br>
+            Littlehampton,<br>
+            West Sussex,<br>
+        </p>
+
+        <!-- Google maps iframe to include Testemp location --> 
+        <div class="map-responsive">
+            <iframe title="Testemp Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.170569136054!2d-0.5531226846213112!3d50.80947836931127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a57ddd3b61db%3A0x890150fde0e3b603!2sTestemp+Ltd!5e0!3m2!1sen!2suk!4v1543318442316" class="border-none full-width" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <!-- Footer including social media links -->
+    <footer class="center background-black">
+        <div>
+            <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a>
+            <a href="#" class="fa fa-twitter center" aria-label="Twitter"></a>
+            <a href="#" class="fa fa-google center" aria-label="Google"></a>
+            <a href="#" class="fa fa-youtube center" aria-label="Youtube"></a>
+            <a href="#" class="fa fa-instagram center btm-margin-small" aria-label="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Javascript used for toggling navigation menu (achieved by hooking onto classes) -->
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("navigationBar");
+            if (x.className === "navigation-bar") {
+                x.className += "mobile-responsive"
+            } else {
+                x.className = "navigation-bar";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,19 +1,19 @@
-.rounded-corners {
-    border-radius: 25px;
-    border: 2px solid black;
-}
-
-.rounded-bottom {
-    border-radius: 0 0 25px 25px;
-    border: 2px solid black;
-}
-
-.rounded-top {
-    border-radius: 25px 25px 0 0;
-    border: 2px solid black;
-}
-
 html, body {
     margin: 0;
     padding: 0;
+}
+
+.break-line {
+    width: 90%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+//Flex card group border for card distinguishment
+.flex-grid-border {
+    border: 2px solid black;
+}
+
+.border-none {
+    border: 0;
 }

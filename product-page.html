@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testemp Ltd</title>
+    <meta name="description" content="Discover our range of products from cables to sensors">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Meta used for inserting font awesome images -->
+    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin /> <!-- Meta used for preloading fonts -->
+</head>
+
+<body class="product-theme">
+    <div class="navbar">
+        <ul class="navigation-bar" id="navigationBar">
+            <li class="active"><h1 class="logo btm-margin-none top-margin-smaller left-margin-small">Testemp Ltd</h1></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-page.html">Product page</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li> <!-- Javascript method call for toggling menu on mobile --> 
+        </ul>    
+    </div>
+
+    <!-- Main product content --> 
+    <main class="content-background  page-title-padding btm-padding-medium">
+        <h2 class="underline center">PVC Cable</h2>
+        <section class="flex-product-cards">
+            <!-- Product details section using flex --> 
+            <article class="flex-product-card flex-grid-border right-margin-medium left-margin-medium right-padding-small left-padding-small">
+                <h2>Construction</h2>
+                <p>Thermocouple : J, K, T, N, U (R/S compensating), Vx (K compensating) Flat Pair</p>
+
+                <h2>Cable Types</h2>
+                <p>Thermocouple : J, K, T, N, U (R/S compensating), Vx (K compensating).</p>
+                <br><p>Round with Mylar Screen and drain wire</p>
+                <p>Resistance (Copper / Copper plated ) : 2 core flat pair</p>
+                <p>Resistance (Copper / Copper plated ) : 3, 4 or 6 wire screened</p>
+
+                <h2>Cable Sizes</h2>
+                <p>Generally most cables at 7 strands of 0.2mm (7/0.2)</p>
+                <p>Other sizes are available upon request (e.g. 13/0.2, 23/0.2)</p>
+
+                <h2>Temperature</h2>
+                <p>Generally the insulation is rated -10 to +105°C</p>
+            </article>
+
+            <!-- Image card group using flex --> 
+            <article class="flex-product-card right-margin-medium ">
+                <img src="images/pvc-cable.jpg" alt="An image showing multiple PVC cables" class="image" />
+                <hr class="break-line">
+                <img src="images/pvc-cable2.png" alt="An image showing multiple PVC cables" class="image" />
+
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer including social media links -->
+    <footer class="center background-black">
+        <div>
+            <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a> <!-- Only active link for prototype-->
+            <a href="#" class="fa fa-twitter center" aria-label="Twitter"></a> <!-- Aria labels used for screen reader context -->
+            <a href="#" class="fa fa-google center" aria-label="Google"></a>
+            <a href="#" class="fa fa-youtube center" aria-label="Youtube"></a>
+            <a href="#" class="fa fa-instagram center btm-margin-small" aria-label="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Javascript used for toggling navigation menu (achieved by hooking onto classes) -->
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("navigationBar");
+            if (x.className === "navigation-bar") {
+                x.className += "mobile-responsive"
+            } else {
+                x.className = "navigation-bar";
+            }
+        }
+    </script>
+</body>
+</html>

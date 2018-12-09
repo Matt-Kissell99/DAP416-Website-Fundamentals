@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testemp Ltd</title>
+    <meta name="description" content="Testemp Ltd are a leading UK based distributor of temperature sensors and temperature controllers. Visit our website to see our full range of products.">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Meta used for inserting font awesome images -->
+    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin /> <!-- Meta used for preloading fonts -->
+</head>
+
+<body class="product-theme">
+    <div class="navbar">
+        <ul class="navigation-bar" id="navigationBar">
+            <li class="active"><h1 class="logo btm-margin-none top-margin-smaller left-margin-small">Testemp Ltd</h1></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-page.html">Product page</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li> <!-- Javascript method call for toggling menu on mobile --> 
+        </ul>    
+    </div>
+
+    <!-- Description of Testemp Ltd, focusing on the history of the company -->
+    <main class="content-background page-title-padding">
+        <h2 class="center">About Temperature Sensors and Controllers Distributor</h2>
+        <div class="left-padding-medium right-margin-medium">
+            <p>Established in 1965, Testemp was created to manufacture temperature sensors specifically for the growing plastics and rubber industries.</p>
+            <p>The company quickly expanded to manufacturing analogue power and temperature controllers (Testemp Electronics).</p>
+            <p>Alongside Testemp's own range of temperature controllers, was the growing range from our Japanese supplier Shinko Technos. With a worldwide distribution of agents Testemp established themselves as a loyal reseller of their range that now exceeds 40 years.
+            Over this period, Testemp has distributed a wide range of analogue and digital temperature controllers and temperature sensors.</p>
+            <p>Many of these units are now obsolete but can easily be updated with the current models detailed in the controller section of our website.</p>
+            <p>As Testemp has grown it has expanded its range of products into other industrial areas.</p>
+            <p>In 2006 as Shinko decreased its production of analogue controllers, Testemp established that there was still a wide market for the basic dial analogue controller and became a UK distributor for Brainchild’s range. Concentrating in two products in particular, the BTC-901 and BTC-404 have grown to become regular products to a wide variety of industries.</p>
+            <p>As markets grow and change, Testemp is keen to explore new areas and develop products to meet new applications.</p>
+        </div>
+
+        <!-- Flex card group depicting members of the team -->
+
+        <h2 class="center">Meet our team</h2>
+        <div class="center left-margin-small right-margin-small btm-padding-medium">
+            <section class="cards">
+                <article class="card flex-grid-border"> <!-- Employee 1 -->
+                   <h3>John Smith - Technical Engineer</h3>
+                   <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                   <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                </article>
+                <article class="card flex-grid-border"> <!-- Employee 2 -->
+                    <h3>John Smith - Technical Engineer</h3>
+                    <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                    <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                    </article>
+                <article class="card flex-grid-border"> <!-- Employee 3 -->
+                    <h3>John Smith - Technical Engineer</h3>
+                    <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                    <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                </article>
+                <article class="card flex-grid-border"> <!-- Employee 4 -->
+                    <h3>John Smith - Technical Engineer</h3>
+                    <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                    <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                </article>
+                <article class="card flex-grid-border"> <!-- Employee 5 -->
+                    <h3>John Smith - Technical Engineer</h3>
+                    <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                    <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                </article>
+                <article class="card flex-grid-border"> <!-- Employee 6 -->
+                    <h3>John Smith - Technical Engineer</h3>
+                    <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                    <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                </article>
+                <article class="card flex-grid-border"> <!-- Employee 7 -->
+                    <h3>John Smith - Technical Engineer</h3>
+                    <p>John is a professional Level 2 Qualified Engineer who has been with Testemp for 20 years</p>
+                    <img src="images/male-profile.png" alt="Profile Picture Placeholder" />
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer including social media links -->
+    <footer class="center background-black">
+        <div>
+            <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a> <!-- Only active link for prototype-->
+            <a href="#" class="fa fa-twitter center" aria-label="Twitter"></a> <!-- Aria labels used for screen reader context -->
+            <a href="#" class="fa fa-google center" aria-label="Google"></a>
+            <a href="#" class="fa fa-youtube center" aria-label="Youtube"></a>
+            <a href="#" class="fa fa-instagram center btm-margin-small" aria-label="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Javascript used for toggling navigation menu (achieved by hooking onto classes) -->
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("navigationBar");
+            if (x.className === "navigation-bar") {
+                x.className += "mobile-responsive"
+            } else {
+                x.className = "navigation-bar";
+            }
+        }
+    </script>
+</body>
+</html>
