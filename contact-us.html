@@ -7,8 +7,8 @@
     <title>Testemp Ltd</title>
     <meta name="description" content="There are many ways to contact us here at Testemp Ltd, choose one and we will be able to answer your questions quickly and effectively">
     <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Meta used for inserting font awesome images -->
+    <link rel="preload" href="dist/fonts/Work_Sans/work-sans-v3-latin-regular.woff2" as="font" type="font/woff2" crossorigin /> <!-- Meta used for preloading fonts -->
 </head>
 
 <body class="product-theme">
@@ -19,10 +19,11 @@
             <li><a href="product-page.html">Product page</a></li>
             <li><a href="about-us.html">About us</a></li>
             <li><a href="">Contact us</a></li>
-            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li>    
+            <li class="burger-menu"><a href="javascript:void(0);" onclick="toggleMenu()">☰</a></li> <!-- Javascript method call for toggling menu on mobile --> 
         </ul>    
     </div>
 
+    <!-- Main content (contact details) --> 
     <main class="content-background page-title-padding left-padding-medium btm-padding-medium right-padding-medium">
         <h2 class="center">Contact us</h2>
         <p>We want to deliver you the best customer experience and we are commited in doing so.
@@ -30,15 +31,16 @@
         </p>
         <h2>Complaints</h2>
         <p>If you have any complaints regarding the products you have purchased you can contact us at: 
-            <a href="mailto:sales@testemp.co.uk">sales@testemp.co.uk</a>
+            <a href="mailto:sales@testemp.co.uk">sales@testemp.co.uk</a> <!-- mailto link for ease of mobile applications --> 
         </p>
         <h2>Returns policy</h2>
         <p>We are contactable 24/7 through a range of methods, including:</p>
         <ul>
             <li>Facebook</li>
             <li>Twitter</li>
-            <li>Email: <a href="mailto:sales@testemp.co.uk" style="color: black" class="padding-none">sales@testemp.co.uk</a></li>
-            <li><a href="tel:+441903714140" style="color: black;" class="padding-none">+441903714140</a></li>
+            <li>Google</li>
+            <li>Instagram</li>
+            <li><a href="tel:+441903714140" style="color: black;" class="padding-none">+441903714140</a></li> <!-- Telelphone attribute allows mobile users to jump into their phone app to call --> 
         </ul>
     
         <h2>Address</h2>
@@ -48,22 +50,25 @@
             Littlehampton,<br>
             West Sussex,<br>
         </p>
+
+        <!-- Google maps iframe to include Testemp location --> 
         <div class="map-responsive">
-        <iframe title="Testemp Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.170569136054!2d-0.5531226846213112!3d50.80947836931127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a57ddd3b61db%3A0x890150fde0e3b603!2sTestemp+Ltd!5e0!3m2!1sen!2suk!4v1543318442316" width="100%" height="100%" frameborder="0" class="border-none" allowfullscreen></iframe>
-        </div>
+            <iframe title="Testemp Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.170569136054!2d-0.5531226846213112!3d50.80947836931127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875a57ddd3b61db%3A0x890150fde0e3b603!2sTestemp+Ltd!5e0!3m2!1sen!2suk!4v1543318442316" class="border-none full-width" allowfullscreen></iframe>
         </div>
     </main>
 
+    <!-- Footer including social media links -->
     <footer class="center background-black">
         <div>
             <a href="https://www.facebook.com/TestempTemperatureSensors/" class="fa fa-facebook center top-margin-small" target="noopener norefferer" aria-label="Facebook"></a>
-            <a href="#" class="fa fa-twitter center" rel="noopener norefferer" aria-label="Twitter"></a>
-            <a href="#" class="fa fa-google center" rel="noopener norefferer" aria-label="Google"></a>
-            <a href="#" class="fa fa-youtube center" rel="noopener norefferer" aria-label="Youtube"></a>
-            <a href="#" class="fa fa-instagram center btm-margin-small" rel="noopener norefferer" aria-label="Instagram"></a>
+            <a href="#" class="fa fa-twitter center" aria-label="Twitter"></a>
+            <a href="#" class="fa fa-google center" aria-label="Google"></a>
+            <a href="#" class="fa fa-youtube center" aria-label="Youtube"></a>
+            <a href="#" class="fa fa-instagram center btm-margin-small" aria-label="Instagram"></a>
         </div>
     </footer>
 
+    <!-- Javascript used for toggling navigation menu (achieved by hooking onto classes) -->
     <script>
         function toggleMenu() {
             var x = document.getElementById("navigationBar");
