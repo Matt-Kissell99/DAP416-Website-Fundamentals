@@ -1,61 +1,104 @@
 //flex structure for the home page flex layout
 .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .card {
-    flex: 1 0 21%; 
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 21%;
+            flex: 1 0 21%; 
     margin: 5px;
 }
 
 .content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: 1 0 21%; 
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 21%;
+            flex: 1 0 21%; 
     margin: 5px;
     height: 95%;
   }
 
 //CSS for 2 column layout on the product page
 .flex-product-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .flex-product-card {
-    flex: 1 0 21%; 
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 21%;
+            flex: 1 0 21%; 
     margin: 5px;
 }
 
 @media screen and (max-width : 700px) { //mobile flex card group, taking 100% of the width when reducing to mobile
     .cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: wrap;
-        align-items: center;
-        justify-content: center;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
-        align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
     }
     
     .card {
-        flex: 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 100%;
+                flex: 1 100%;
         border: 1px solid black;
     }
 
     .flex-product-cards {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: wrap;
-        align-items: center;
-        justify-content: center;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 100%;
-        align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
     }
     
     .flex-product-card {
-        flex: 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 100%;
+                flex: 1 100%;
     }
 }
